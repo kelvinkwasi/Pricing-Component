@@ -150,7 +150,14 @@ body {
     padding: 18px 100px;
     background-color: blue ;
     border-radius:  .6em;
-    /* margin-bottom: 300em; */
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, 
+    hsl(236, 72%, 79%), hsl(237, 63%, 64%)
+    );
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing:  .2em;
 }
 
 
