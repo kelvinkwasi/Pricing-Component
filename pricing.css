@@ -133,6 +133,15 @@ body {
     color: hsl(233, 13%, 49%);
 }
 
+.card  {
+    text-align: center;
+}
+
+.basic p {
+
+        color: hsl(233, 13%, 49%);
+    }
+
 .professional {
     width: 35em;
     height: 55em;
@@ -143,7 +152,8 @@ body {
 }
 
 
-.basic div a {
+
+.card div a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,6 +169,13 @@ body {
     font-weight: 700;
     letter-spacing:  .2em;
 }
+
+.professional div a{
+    background: white;
+    color: rgb(105, 111, 221);
+}
+
+
 
 
 
