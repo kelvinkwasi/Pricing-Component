@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pricing.css">
-    <title>Monthly Pricing</title>
+    <link rel="stylesheet" href="pricing.js">
+    <title>Anually Pricing</title>
 </head>
 <body>
     <section class="wrapper">
@@ -17,9 +18,9 @@
                     <h1>Our Pricing</h1>
                 <div>
                     <p>Anually</p>
-                        <div class="button">
-                            <span></span>
-                        </div>
+                    <div  class="button">
+                        <!-- <span class="toggle"></span> -->
+                    </div>
                     <p>Monthly</p>
                 </div>
             </div>
@@ -81,5 +82,29 @@
                 </div>
             </div>
     </section>
+
+    <script>
+        const button = document.querySelector(".button") 
+        console.log(button);
+
+        button.addEventListener("click", () => 
+        {
+            button.classList.toggle("active");
+        
+        });
+
+// button.addEventListener("click", () => {
+//   button.classList.toggle("active");
+//   button.addEventListener("transitionend", () => {
+//     if (button.classList.contains("active")) {
+//       setTimeout(() => {
+//         window.location.href = "pricing.html";
+//       }, 300); // Adjust the delay time (in milliseconds) to match your transition duration
+//     }
+//   });
+// });
+
+        
+    </script>
 </body>
 </html>
