@@ -5,30 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pricing.css">
     <link rel="stylesheet" href="pricing.js">
-    <title>Anually Pricing</title>
+    <title>Monthly Pricing</title>
 </head>
 <body>
-    <section class="wrapper">
+    <div class="monthly-content" src="index.html">
+        <section class="wrapper ">
+
+                <div class="svg">
+                    <div class="bg-img"></div>
+                    <div class="bg-img2"></div>
+                </div>
+                <div class="heading">
+                        <h1>Our Pricing</h1>
+
+                         <!-- toggle button begins her -->
+                    <div>
+                        <p>Anually</p>
+                        <div  class="button">
+                            <span class="toggle"></span>
+                        </div>
+                        <p>Monthly</p>
+                    </div>
+
+                    <!-- toggle button ends here -->
+                </div>
+
+                <!-- Card Tiles w details -->
+                <div class="card-tile">
+                    <div class="basic card">
+                        <h3>Basic</h3>
+                        <h1>$19.99</h1>
+                        <div class="details">
+                            <span>
+                                <p>500 GB Storage</p>
+                            </span>
+                            <span>
+                                <p>2 Users Allowed</p>
+                            </span>
+                            <span>
+                                <p>Send up to 3 GB</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="professional card">
+                        <h3>Professional</h3>
+                        <h1>$24.99</h1>
+                        <div class="details">
+                            <span>
+                                <p>1 TB Storage</p>
+                            </span>
+                            <span>
+                                <p>5 Users Allowed</p>
+                            </span>
+                            <span>
+                                <p>Send up to 10 GB</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                    <div class="basic card">
+                        <h3>Master</h3>
+                        <h1>$39.99</h1>
+                        <div class="details">
+                            <span>
+                                <p>2 TB Storage</p>
+                            </span>
+                            <span>
+                                <p>10 Users Allowed</p>
+                            </span>
+                            <span>
+                                <p>Send up to 20 GB</p>
+                            </span>
+                        </div>
+                        <div>
+                            <a href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <div class="annual-content" style="display: none;" src="anual.html">
+        <section class="wrapper">
             <div class="svg">
                 <div class="bg-img"></div>
                 <div class="bg-img2"></div>
             </div>
-
             <div class="heading">
                     <h1>Our Pricing</h1>
                 <div>
                     <p>Anually</p>
-                    <div  class="button">
-                        <!-- <span class="toggle"></span> -->
-                    </div>
+                        <div class="button">
+                            <!-- <span class="toggle"></span> -->
+                        </div>
                     <p>Monthly</p>
                 </div>
             </div>
-
             <div class="card-tile">
                 <div class="basic card">
                     <h3>Basic</h3>
-                    <h1>$19.99</h1>
+                    <h1>$199.99</h1>
                     <div class="details">
                         <span>
                             <p>500 GB Storage</p>
@@ -46,7 +127,7 @@
                 </div>
                 <div class="professional card">
                     <h3>Professional</h3>
-                    <h1>$24.99</h1>
+                    <h1>$249.99</h1>
                     <div class="details">
                         <span>
                             <p>1 TB Storage</p>
@@ -64,7 +145,7 @@
                 </div>
                 <div class="basic card">
                     <h3>Master</h3>
-                    <h1>$39.99</h1>
+                    <h1>$399.99</h1>
                     <div class="details">
                         <span>
                             <p>2 TB Storage</p>
@@ -81,30 +162,70 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
+    </div>
 
     <script>
-        const button = document.querySelector(".button") 
-        console.log(button);
+        // const button = document.querySelector(".toggle") 
+        // // console.log(button);
 
-        button.addEventListener("click", () => 
-        {
-            button.classList.toggle("active");
+        // button.addEventListener("click", () => 
+        // {
+        //     button.classList.toggle("active");
         
-        });
+        // });
+
+        // main.js
+        const buttons = document.querySelector(".toggle");
+
+buttons.addEventListener("click", () => {
+document.body.classList.toggle("annual-content");
+buttons.classList.toggle("active");
+});
+
+
+
+//         const toggleButton = document.querySelector(".toggle");
+// const monthlyContent = document.querySelector(".monthly-content");
+// const annualContent = document.querySelector(".annual-content");
+
+// toggleButton.addEventListener("click", () => {
+//   monthlyContent.classList.toggle("hidden");
+//   annualContent.classList.toggle("hidden");
+//   toggleButton.classList.toggle("active"); 
+// });
+
+
+
+
+//         const buttons = document.querySelector(".toggle");
+
+// buttons.addEventListener("click", () => {
+// document.body.classList.toggle("anual.html");
+// buttons.classList.toggle("active");
+// });
+
+//         const buttons = document.querySelector(".button");
+
+// buttons.onclick=function () {
+//     document.body.classList.toggle("dark-theme");
+// }
+
+// button.addEventListener("click", ()=> {
+//     button.body.classList.toggle("active");
+// });
 
 // button.addEventListener("click", () => {
 //   button.classList.toggle("active");
 //   button.addEventListener("transitionend", () => {
 //     if (button.classList.contains("active")) {
 //       setTimeout(() => {
-//         window.location.href = "pricing.html";
+//         window.location.href = "index_anual.html";
 //       }, 300); // Adjust the delay time (in milliseconds) to match your transition duration
 //     }
 //   });
 // });
 
-        
     </script>
 </body>
 </html>
